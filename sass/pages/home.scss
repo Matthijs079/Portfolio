@@ -1,0 +1,100 @@
+.home{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	overflow: hidden;
+
+	&__matthijs{
+		grid-column: 1/10;
+		grid-row: 1/11;
+		height: 1070px;
+	}
+
+	&__text{
+		z-index: 1;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		grid-column: 8/9;
+		grid-row: 2/3;
+		padding-top: 13px;
+		padding-left: 25px;
+	}
+
+	&__name{
+		grid-column: 6/8;
+		grid-row: 2/3;
+		z-index: 1;
+		font-family: 'Playfair Display', serif;
+		font-size: 90px;
+		font-weight: 900;
+	}
+
+	&__fullstack{
+		width: 175px;
+		height: 41px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 35px;
+		font-weight: 500;
+		margin: 4px 0;
+	}
+
+	&__developer{
+		width: 175px;
+		height: 35px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 500;
+		margin: 0 auto;
+	}
+
+	&__smallslider{
+		height: 1070px;
+		padding-left: 125px;
+		grid-column: 3/7;
+		grid-row: 1/11;
+	}
+
+	&__bigslider{
+		height: 1070px;
+		grid-column: 4/11;
+		grid-row: 1/11;
+	}
+
+	&__sidebar{
+		grid-column: 1/2;
+		grid-row: 1/11;
+		width: 60px;
+		height: 1070px;
+		background-color: #439775;
+		display: flex;
+		align-items: center;
+	}
+
+	&__sidetext{
+		width: 61px;
+		height: 30px;
+		transform: rotate(-90deg);
+		font-family: 'Playfair Display', serif;
+		font-size: 22px;
+		font-weight: 900;
+		text-align: center;
+		color: #d0db97;
+	}
+
+	&__icons{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+		justify-content: center;
+		grid-row: 4/5;
+		grid-column: 1/2;
+		margin-left: 10px;
+		margin-bottom: 50px;
+	}
+
+	&__github{
+		margin-bottom: 20px;
+	}
+}

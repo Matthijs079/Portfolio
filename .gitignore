@@ -62,3 +62,5 @@ typings/
 
 # the .dea/ map
 .idea/
+
+.sass-cache

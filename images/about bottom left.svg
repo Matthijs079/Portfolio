@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="450px" viewBox="0 0 400 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>bottom left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.82">
+        <g transform="translate(-819.000000, -450.000000)" fill="#439775" id="Overlay">
+            <g transform="translate(819.000000, 0.000000)">
+                <polygon id="bottom-left" style="mix-blend-mode: darken;" points="399.781626 900 200.399353 450 -2.84217094e-14 900"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
