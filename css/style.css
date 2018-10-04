@@ -764,6 +764,9 @@ th {
   .info__forwardimg {
     margin-left: 5%; }
 
+.hidden {
+  visibility: hidden; }
+
 .nav {
   grid-column: 1;
   grid-row: 1/11;
