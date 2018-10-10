@@ -4,12 +4,21 @@
 	justify-self: start;
 	width: 60px;
 	height: 96vh;
-	background-color: #439775;
+	background-color: $ocean-green;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2vh 0;
+
+	@media screen and (max-width: 992px){
+		grid-column: 1/11;
+		grid-row: 1;
+		background-color: $ocean-green;
+		display: flex;
+		width: 100%;
+		height: 60px;
+	}
 
 	&__icons{
 		display: flex;
@@ -18,33 +27,41 @@
 		justify-content: space-between;
 		height: 10vh;
 		z-index: 300;
+
+		@media screen and (max-width: 992px){
+			display: none;
+		}
 	}
 
 	&__text{
 		transform: rotate(-90deg);
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 22px;
 		font-weight: 900;
 		text-align: center;
-		color: #d0db97;
+		color: $greenish-beige;
 	}
 
 	&__name{
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 60px;
 		font-weight: 900;
-		color: #d0db97;
+		color: $greenish-beige;
 		text-decoration: none;
+
+		&:hover{
+			color: $baby-green;
+		}
+
+		&:active{
+			color: $dark-mint;
+		}
 	}
 
 	&__link{
 		list-style: none;
 		text-align: center;
 	}
-}
-
-.active{
-	color: #82ff9e;
 }
 
 label .menu {
@@ -54,12 +71,19 @@ label .menu {
 	z-index: 100;
 	width: 60px;
 	height: 60px;
-	background: #439775;
+	background: $ocean-green;
 	border-radius: 50% 50% 50% 50%;
 	-webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
-	box-shadow: 0 0 0 0 #439775, 0 0 0 0 #439775;
+	box-shadow: 0 0 0 0 $ocean-green, 0 0 0 0 $ocean-green;
 	cursor: pointer;
+
+	@media screen and (max-width: 992px){
+		left: 90%;
+		top: 30px;
+		width: 60px;
+		height: 60px;
+	}
 }
 
 label .hamburger {
@@ -74,6 +98,12 @@ label .hamburger {
 	transform-origin: center;
 	-webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
+
+	@media screen and (max-width: 992px){
+		width: 60px;
+		top: 50px;
+	}
+
 }
 
 label .hamburger:after, label .hamburger:before {
@@ -94,7 +124,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-	box-shadow: 0 0 0 100vw #439775, 0 0 0 100vh #439775;
+	box-shadow: 0 0 0 100vw $ocean-green, 0 0 0 100vh $ocean-green;
 	border-radius: 0;
 }
 
@@ -121,10 +151,16 @@ label ul {
 	z-index: 200;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	margin-left: 50vw;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	-webkit-transition: .25s 0s ease-in-out;
 	transition: .25s 0s ease-in-out;
 }
+
+svg:hover{
+	fill: $baby-green;
+}
+
+svg:active{}

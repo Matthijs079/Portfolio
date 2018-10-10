@@ -10,6 +10,7 @@
 		height: 1070px;
 	}
 
+
 	&__text{
 		z-index: 1;
 		display: flex;
@@ -19,14 +20,14 @@
 		grid-column: 8/9;
 		grid-row: 2/3;
 		padding-top: 13px;
-		padding-left: 25px;
+		padding-left: 50px;
 	}
 
 	&__name{
 		grid-column: 6/8;
 		grid-row: 2/3;
 		z-index: 1;
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 90px;
 		font-weight: 900;
 	}
@@ -34,7 +35,7 @@
 	&__fullstack{
 		width: 175px;
 		height: 41px;
-		font-family: 'Raleway', sans-serif;
+		font-family: $railway;
 		font-size: 35px;
 		font-weight: 500;
 		margin: 4px 0;
@@ -43,7 +44,7 @@
 	&__developer{
 		width: 175px;
 		height: 35px;
-		font-family: 'Raleway', sans-serif;
+		font-family: $railway;
 		font-size: 30px;
 		font-weight: 500;
 		margin: 0 auto;
@@ -61,40 +62,5 @@
 		grid-column: 4/11;
 		grid-row: 1/11;
 	}
-
-	&__sidebar{
-		grid-column: 1/2;
-		grid-row: 1/11;
-		width: 60px;
-		height: 1070px;
-		background-color: #439775;
-		display: flex;
-		align-items: center;
-	}
-
-	&__sidetext{
-		width: 61px;
-		height: 30px;
-		transform: rotate(-90deg);
-		font-family: 'Playfair Display', serif;
-		font-size: 22px;
-		font-weight: 900;
-		text-align: center;
-		color: #d0db97;
-	}
-
-	&__icons{
-		display: flex;
-		flex-flow: column wrap;
-		align-items: flex-start;
-		justify-content: center;
-		grid-row: 4/5;
-		grid-column: 1/2;
-		margin-left: 10px;
-		margin-bottom: 50px;
-	}
-
-	&__github{
-		margin-bottom: 20px;
-	}
 }
+

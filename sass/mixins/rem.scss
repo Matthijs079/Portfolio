@@ -1,0 +1,10 @@
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculate-rem($size); // stylelint-disable-line declaration-block-no-duplicate-properties
+}
+
+// Rem line-height with fallback to px (in combination with function called 'calculateRem')
+@mixin line-height($size) {
+	line-height: $size;
+	line-height: calculate-rem($size); // stylelint-disable-line declaration-block-no-duplicate-properties
+}

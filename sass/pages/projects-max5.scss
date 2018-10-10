@@ -23,7 +23,7 @@
 	}
 	
 	&__title{
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 80px;
 		font-weight: 900;
 		color: #439775;
@@ -31,7 +31,7 @@
 	}
 
 	&__developer{
-		font-family: 'Raleway', sans-serif;
+		font-family: $railway;
 		font-size: 20px;
 		font-weight: 500;
 		color: #2a4747;
@@ -44,15 +44,16 @@
 	}
 
 	&__viewtext{
-		font-family: 'Raleway', sans-serif;
+		font-family: $railway;
 		font-size: 14px;
 		font-weight: 500;
 	}
 
 	&__arrow{
 		cursor: pointer;
-		height: 40px;
-		width: 30px;
+		height: 30px;
+		width: 20px;
+		padding-top: 5px;
 	}
 
 	&__picture{
@@ -81,7 +82,7 @@
 	&__projectimg{
 		grid-row: 2/9;
 		grid-column: 5/10;
-		border: 5px #439775 solid;
+		border: 5px $ocean-green solid;
 		padding: 10px;
 		margin: 30px 0;
 		height: 50vh;
@@ -104,7 +105,7 @@
 		background-color: white;
 		font-size: 15.4px;
 		font-weight: 500;
-		font-family: 'Raleway', sans-serif;
+		font-family: $railway;
 		cursor: pointer;
 	}
 }

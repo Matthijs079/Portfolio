@@ -1,0 +1,15 @@
+$breakpoints: (
+		'phone-mini': #{calculate-rem(325px)},
+		'phone-medium': #{calculate-rem(360px)},
+		'phone-small': #{calculate-rem(380px)},
+		'phone': #{calculate-rem(400px)},
+		'phone-wide': #{calculate-rem(480px)},
+		'phablet': #{calculate-rem(560px)},
+		'tablet-small': #{calculate-rem(640px)},
+		'tablet': #{calculate-rem(766px)},
+		'tablet-wide': #{calculate-rem(1024px)},
+		'desktop': #{calculate-rem(1248px)},
+		'desktop-hd': #{calculate-rem(1290px)},
+		'desktop-wide': #{calculate-rem(1440px)},
+		'desktop-large': #{calculate-rem(1920px)}
+);

@@ -1,12 +1,18 @@
 .detail{
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
-	grid-template-rows: repeat(10,1fr);
+	grid-template-rows: repeat(12,1fr);
+
+	&__heading{
+		grid-row: 1/4;
+		grid-column: 3/9;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: column nowrap;
+	}
 
 	&__title{
-		grid-column: 3/9;
-		grid-row: 1/5;
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 75px;
 		font-weight: 900;
 		text-align: center;
@@ -14,27 +20,25 @@
 	}
 
 	&__undertitle{
-		grid-column: 3/9;
-		grid-row: 3;
-		font-family: 'Raleway', serif;
+		font-family: $railway;
 		font-size: 22px;
 		font-weight: 500;
 		text-align: center;
 	}
 
 	&__skilltext{
-		grid-row: 3;
+		grid-row: 3/5;
 		grid-column: 3/9;
 		font-size: 22px;
 		font-weight: 900;
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		text-align: center;
 		align-self: end;
 		margin-top: 9%;
 	}
 
 	&__skills{
-		grid-row: 4;
+		grid-row: 5;
 		grid-column: 3/9;
 		display: flex;
 		justify-content: center;
@@ -49,19 +53,19 @@
 
 	&__image{
 		z-index: -1;
-		grid-row: 6/11;
+		grid-row: 7/13;
 		grid-column: 1/11;
-		background-color: #d0db97;
+		background-color: $greenish-beige;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
 	&__projectimg{
-		background-color: white;
+		background-color: $white;
 		height: 60vh;
 		padding: 10px;
-		border: 6px #439775 solid;
+		border: 6px $ocean-green solid;
 	}
 
 }
@@ -79,7 +83,7 @@
 	}
 
 	&__border{
-		border-left: 3px #2a4747 solid;
+		border-left: 3px $dark-grey-blue solid;
 		height: 40%;
 		grid-column: 2;
 		grid-row: 1/2;
@@ -102,45 +106,46 @@
 
 	&__imgleftunder{
 		grid-column: 2/5;
-		grid-row: 7/11;
-		width: 650px;
-		height: 500px;
+		grid-row: 5/10;
 	}
 
 	&__text{
-		grid-column: 7/10;
+		grid-column: 6/10;
 		grid-row: 1/6;
-		font-family: 'Raleway', serif;
+		height: 100%;
+		font-family: $railway;
 		font-size: 18px;
 		font-weight: 500;
-		border-right: 3px #2a4747 solid;
-		border-bottom: 3px #2a4747 solid;
+		border-right: 3px $dark-grey-blue solid;
+		border-bottom: 3px $dark-grey-blue solid;
 		padding: 20px;
+		margin-top: 10%;
+		text-align: justify;
+		display: flex;
+		flex-flow: column nowrap;
+		align-content: space-between;
 	}
 
 	&__textheader{
-		margin-top: 30%;
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 36px;
 		font-weight: 900;
 	}
 
 	&__imgrightunder{
-		grid-column: 7/10;
-		grid-row: 7/11;
-		width: auto;
-		height: 500px;
+		grid-column: 6/10;
+		grid-row: 7/10;
+		width: 40vw;
 	}
 
 	&__textbottom{
-		margin-top: 15%;
 		display: flex;
 		justify-content: space-between;
 	}
 
 	&__footer{
 		grid-column: 2/10;
-		grid-row: 11;
+		grid-row: 10;
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 3%;
@@ -158,7 +163,7 @@
 
 	&__backtext{
 		margin-top: 7%;
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 22px;
 		font-weight: 900;
 		color: #2a4747;
@@ -177,7 +182,7 @@
 
 	&__icons{
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 	}
 
@@ -189,7 +194,7 @@
 	&__forwardtext{
 		margin-top: 7%;
 		text-align: right;
-		font-family: 'Playfair Display', serif;
+		font-family: $PlayfairDisplay;
 		font-size: 22px;
 		font-weight: 900;
 		color: #2a4747;

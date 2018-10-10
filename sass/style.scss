@@ -1,6 +1,10 @@
 //vendor
+@import "vendor/normalize";
 
-@import 'vendor/normalize';
+//modules
+@import "modules/vars";
+@import "functions/function";
+@import "modules/breakpoints";
 
 
 //pages
@@ -13,3 +17,5 @@
 //partails
 
 @import "partials/nav";
+
+

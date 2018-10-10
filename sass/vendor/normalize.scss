@@ -428,5 +428,11 @@ th {
 
 .scroll{
 	height: 100vh;
-	overflow-y: hidden;
+	overflow: hidden;
+}
+
+.sticky{
+	grid-column: 1;
+	grid-row: 1/13;
+	position: fixed;
 }
