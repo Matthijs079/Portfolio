@@ -92,21 +92,22 @@
 	&__imgleftabove{
 		grid-column: 2/5;
 		grid-row: 2/6;
-		width: 650px;
-		height: 500px;
+		width: 60vh;
+		height: 60vh;
 	}
 
 	&__smallgreen{
 		margin-top: 30%;
-		margin-left: 15%;
 		height: 70vh;
-		grid-column: 3/5;
+		grid-column: 4/6;
 		grid-row: 1/6;
 	}
 
 	&__imgleftunder{
 		grid-column: 2/5;
-		grid-row: 5/10;
+		grid-row: 6/10;
+		height: 60vh;
+		width: 37vw;
 	}
 
 	&__text{
@@ -123,7 +124,7 @@
 		text-align: justify;
 		display: flex;
 		flex-flow: column nowrap;
-		align-content: space-between;
+		justify-content: space-between;
 	}
 
 	&__textheader{
@@ -135,10 +136,14 @@
 	&__imgrightunder{
 		grid-column: 6/10;
 		grid-row: 7/10;
-		width: 40vw;
+		width: 30vw;
+		height: 45vh;
+		justify-self: end;
 	}
 
 	&__textbottom{
+		align-items: flex-end;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -153,7 +158,7 @@
 
 	&__backimg{
 		transform: rotate(180deg);
-		margin-right: 3%;
+		margin-top: 50%;
 	}
 
 	&__back{
@@ -162,11 +167,11 @@
 	}
 
 	&__backtext{
-		margin-top: 7%;
 		font-family: $PlayfairDisplay;
 		font-size: 22px;
 		font-weight: 900;
-		color: #2a4747;
+		color: $dark-grey-blue;
+		margin-left: 5%;
 	}
 
 	&__backtitle{
@@ -178,6 +183,10 @@
 		flex-flow: column wrap;
 		justify-content: center;
 		width: 8%;
+
+		@media screen and (max-width: 1650px) {
+			width: 10%;
+		}
 	}
 
 	&__icons{
@@ -192,16 +201,16 @@
 	}
 
 	&__forwardtext{
-		margin-top: 7%;
 		text-align: right;
 		font-family: $PlayfairDisplay;
 		font-size: 22px;
 		font-weight: 900;
-		color: #2a4747;
+		color: $dark-grey-blue;
 	}
 
 	&__forwardimg{
-		margin-left: 5%;
+		margin-left: 50%;
+		margin-top: 100%;
 	}
 }
 
