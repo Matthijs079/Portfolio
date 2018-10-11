@@ -17,10 +17,13 @@
 		flex-flow: column wrap;
 		justify-content: center;
 		align-items: center;
-		grid-column: 8/9;
+		grid-column: 8/10;
 		grid-row: 2/3;
 		padding-top: 13px;
-		padding-left: 50px;
+
+		@media screen and (max-width: 1500px){
+			margin-left: 40%;
+		}
 	}
 
 	&__name{
