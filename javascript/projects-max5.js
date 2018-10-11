@@ -1,9 +1,9 @@
 const projects = {
 	ods: { name: "Old Dance School" , developer: "FULL-STACK DEVELOPER", img: "../images/ODS/Home.png" , url: "projects/ODSDetails.html"},
-	ftsfWeb: { name: "Fair Trade Software Foundation Webshop" , developer: "FULL-STACK DEVELOPER", img: "../images/doggo.jpg" , url: "projects/FTSFWebDetails.html"},
-	ftsfCMS: { name: "Fair Trade Software Foundation CMS" , developer: "FULL-STACK DEVELOPER", img: "../images/Matthijs_About.jpg" , url: "projects/FTSFCMSDetails.html"},
-	smoel: {name: "Smoelenboek" , developer: "FULL-STACK DEVELOPER" , img: "../images/doggo.jpg" , url: "projects/SmoelDetails.html"},
-	ODSAdmin: {name: "Old dance School Admin" , developer: "FULL-STACK DEVELOPER" , img: "../images/Matthijs_About.jpg" , url: "projects/ODSAdminDetails.html"}
+	ftsfWeb: { name: "Fair Trade Software Foundation Webshop" , developer: "FULL-STACK DEVELOPER", img: "../images/FTSFweb/Home.png" , url: "projects/FTSFWebDetails.html"},
+	ftsfCMS: { name: "Fair Trade Software Foundation CMS" , developer: "FULL-STACK DEVELOPER", img: "../images/FTfscms/Home2.png" , url: "projects/FTSFCMSDetails.html"},
+	smoel: {name: "Smoelenboek" , developer: "FULL-STACK DEVELOPER" , img: "../images/Smoel/Home2.png" , url: "projects/SmoelDetails.html"},
+	ODSAdmin: {name: "Old dance School Admin" , developer: "FULL-STACK DEVELOPER" , img: "../images/ODSA/Home2.png" , url: "projects/ODSAdminDetails.html"}
 };
 
 const PROJECT_ITEM = document.querySelectorAll('.project__projectname');

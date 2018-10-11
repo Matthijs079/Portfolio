@@ -61,6 +61,10 @@
 		list-style: none;
 		text-align: center;
 	}
+
+	&__github{
+		margin-bottom: 30%;
+	}
 }
 
 label .menu {
@@ -157,9 +161,3 @@ label ul {
 	-webkit-transition: .25s 0s ease-in-out;
 	transition: .25s 0s ease-in-out;
 }
-
-svg:hover{
-	fill: $baby-green;
-}
-
-svg:active{}
