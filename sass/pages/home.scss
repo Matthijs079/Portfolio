@@ -22,7 +22,11 @@
 		padding-top: 13px;
 
 		@media screen and (max-width: 1500px){
-			margin-left: 40%;
+			grid-row: 2;
+			grid-column: 6/9;
+			align-self: end;
+			flex-flow: row nowrap;
+
 		}
 	}
 
@@ -42,6 +46,10 @@
 		font-size: 35px;
 		font-weight: 500;
 		margin: 4px 0;
+
+		@media screen and (max-width: 1500px){
+			margin: 0 20px 0 0;
+		}
 	}
 
 	&__developer{
@@ -51,6 +59,10 @@
 		font-size: 30px;
 		font-weight: 500;
 		margin: 0 auto;
+
+		@media screen and (max-width: 1500px){
+			margin: 0;
+		}
 	}
 
 	&__smallslider{
@@ -58,12 +70,21 @@
 		padding-left: 125px;
 		grid-column: 3/7;
 		grid-row: 1/11;
+
+		@media screen and (max-width: 1350px){
+			padding-left: 80px;
+			grid-column: 4/7;
+		}
 	}
 
 	&__bigslider{
 		height: 1070px;
 		grid-column: 4/11;
 		grid-row: 1/11;
+
+		@media screen and (max-width: 1350px) {
+			grid-column: 5/11;
+		}
 	}
 }
 
